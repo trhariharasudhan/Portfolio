@@ -1,44 +1,52 @@
 # Portfolio Website
 
-## About
+> This is my personal portfolio website showcasing my skills, projects, and professional experience.
+> The website is designed to present my work in a clean, responsive, and user-friendly manner.
 
-> This is my personal portfolio showcasing my skills, projects, and experiences.  
-> It includes my resume, an AI personal chatbot, and interactive sections to explore my work.  
-> The portfolio also integrates a database to store contact form submissions and manage data securely.
+## Live Website:
+> https://portfolio-mocha-three-97.vercel.app/
 
-## Technologies & Tools Used
+## About Me
 
->  HTML, CSS, JavaScript  
->  Python, PHP  
->  SQL / Database integration  
->  Bootstrap 5  
->  File types supported: PNG, JPG, GIF, PDF, DOCX, ICO, ENV  
->  Backend for form handling, AI chatbot, and admin panel  
+> I am a passionate developer with a strong interest in building modern web applications and solving real-world problems using technology.
+> This portfolio highlights my projects, technical skills, resume, and ways to get in touch with me.
 
 ## Features
 
->  Home, About, Skills, Projects, Contact sections  
->  AI Personal Chatbot for interactive experience (like a personal assistant)  
->  Resume attachment available for download  
->  Responsive design for mobile and desktop  
->  Interactive project modals  
->  Contact form to submit messages and data to database  
->  Admin login to view submitted details (admin-only access)  
->  Friends’ portfolio links included for reference  
->  Database integration for managing form submissions and user interactions  
+> Responsive personal portfolio design
+> Projects showcase section
+> Resume download
+> Clean UI with modern styling
+> Optimized for desktop and mobile devices
 
-## Contact & Socials
+## Technologies Used
 
->  Feel free to reach out or follow me on my social platforms:
-    >  Address   : [Your Location]  
-    >  GitHub    : [your-github-link]  
-    >  LinkedIn  : [your-linkedin-link]  
-    >  Email     : your.email@example.com  
-    >  WhatsApp  : [your-whatsapp-link]  
-    >  Instagram : [your-instagram-link]  
-    >  Twitter   : [your-twitter-link]  
-    >  Discord   : [your-discord-link]  
+> HTML5
+> CSS3
+> JavaScript
+> Bootstrap
+> Font Awesome / Bootstrap Icons
 
-## Website Link
+## Deployment
 
->  Live Website : [Portfolio Website](https://trhariharasudhan.web.app/)
+> Repository: Private GitHub repository
+> Hosting: Vercel
+> Auto Deployment: Enabled via GitHub integration
+> Every push to the main branch automatically updates the live website.
+
+## Code Privacy
+
+> This project is hosted from a private GitHub repository.
+> The source code is not publicly accessible and is used only for personal and professional purposes.
+
+## Contact
+
+> If you’d like to connect, collaborate, or discuss opportunities, feel free to reach out through the contact section on my website.
+
+## License
+
+> This portfolio is for personal use only.
+> Reusing or copying the design or content without permission is not allowed.
+
+
+

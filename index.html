@@ -13,28 +13,28 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"> 
 
     <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
-    <!-- Libraries Stylesheet -->
-    <link href="assets/lib/animate/animate.min.css" rel="stylesheet">
-    <link href="assets/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-    <link href="assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
 
     <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Template Stylesheet -->
-    <link href="assets/css/style.css" rel="stylesheet">
-
+    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
+    <!-- Libraries Stylesheet -->
+    <link rel="stylesheet" href="assets/lib/animate/animate.min.css">
+    <link rel="stylesheet" href="assets/lib/lightbox/css/lightbox.min.css">
+    <link rel="stylesheet" href="assets/lib/owlcarousel/assets/owl.carousel.min.css">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    
+    <!-- Template Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
   </head>
 
   <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
@@ -54,38 +54,70 @@
             <h3 class="text-primary mb-3">Hello !! This Is</h3>
             <h1 class="display-3 mb-4">HARI HARA SUDHAN</h1>
             <h2 class="typed-text-output d-inline"></h2>
-            <div class="typed-text d-none">Technical Support Engineer / IT Support, Network / System Administrator</div>
+            <div class="typed-text d-none">Technical Support Engineer / IT Support, Independent Developer</div>
               <div class="d-flex align-items-center pt-5">
-              <a href="assets/resume/Hari Hara Sudhan.pdf" class="cert-card btn btn-primary py-3 px-4 me-5">
-                <i class="fa-solid fa-file me-2"></i>Resume</a>
+                <a href="assets/resume/Hari Hara Sudhan.pdf" class="cert-card btn btn-primary py-3 px-4 me-5">
+                  <i class="fa-solid fa-file me-2"></i>Resume</a>
 
-                <!-- Normal Chat Icon Only -->
-                <button type="button" data-bs-toggle="modal" data-bs-target="#chatModal" style="background:none; border:none; padding:0;">
-                  <i class="cert-card fa-solid fa-comments" style="font-size:24px; color:#000;"></i>
-                </button>
+                  <!-- Normal Chat Icon Only -->
+                  <button type="button" data-bs-toggle="modal" data-bs-target="#chatModal" style="background:none; border:none; padding:0;">
+                    <i class="cert-card fa-solid fa-comments" style="font-size:24px; color:#000;"></i>
+                  </button>
 
-                <!-- Chat Modal (opens automatically) -->
-                <div class="modal fade" id="chatModal" tabindex="-1" aria-labelledby="chatModalLabel" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content p-3">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="chatModalLabel">Personal Assistant</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body d-flex justify-content-center align-items-center" 
-                          style="height:150px; font-size:18px; font-weight:600; text-align:center;">
-                          Thanks for tapping in! Our Personal Assistant chatbot is still under active development, 
-                          and I’m building it with care. It’ll be live for you very soon.
+                  <!-- Chat Modal (opens automatically) -->
+                  <div class="modal fade" id="chatModal" tabindex="-1">
+                    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                      <div class="modal-content chat-modal-content">
+
+                        <!-- Header -->
+                        <div class="modal-header">
+                          <h5 class="modal-title">MemoryCore</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body d-flex flex-column p-0">
+
+                          <!-- CHAT BODY -->
+                          <div class="chat-body">
+                            <div class="chat-welcome" id="chatWelcome">
+                              <h4>Welcome! Let’s have a conversation.</h4>
+                              <p>Feel free to ask me anything about me — I’m here to help and will explain everything honestly and clearly.</p>
+                            </div>
+                          </div>
+
+                          <!-- CHAT INPUT BAR -->
+                          <div class="chat-input-wrapper">
+
+                            <!-- PLUS BUTTON -->
+                            <button type="button" class="chat-btn plus-btn" title="More options" onclick="toggleOptions()">
+                              <i class="fas fa-plus"></i>
+                            </button>
+
+                            <!-- OPTIONS -->
+                            <div class="plus-options" id="plusOptions">
+                              <button>Attach File</button>
+                              <button>Image</button>
+                              <button>Location</button>
+                            </div>
+
+                            <!-- TEXT INPUT -->
+                            <input type="text" class="chat-input" placeholder="Ask Anything" autocomplete="off">
+                            
+                            <!-- Microphone -->
+                            <div class="right-buttons">
+                              <button type="button" class="chat-btn mic-btn">
+                                <i class="fa-duotone fa-solid fa-microphone"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-
-              <h5 class="ms-4 mb-0 d-none d-sm-block">Chat With My Personal Assistant</h5>
-            </div>
+                <h5 class="ms-4 mb-0 d-none d-sm-block">Chat With My Assistant</h5>
+              </div>
           </div>
           <div class="col-lg-6">
-            <img class="img-fluid" src="assets/img/profile.png" alt="">
+            <img class="img-fluid" src="assets/img/profile2.png" alt="">
           </div>
         </div>
       </div>
@@ -98,27 +130,26 @@
           <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.1s">
             <div class="d-flex align-items-center mb-5">
               <div class="years flex-shrink-0 text-center me-4">
-                <h1 class="display-1 mb-0">22</h1>
+                <h1 class="display-1 mb-0" id="autoAge">22</h1>
                 <h5 class="mb-0">Cheese</h5>
               </div>
               <h4 class="lh-base mb-0">
                 years of consistent dedication, growth, and excellence in my career path
               </h4>
             </div>
-            <p class="mb-4">
+            <p class="mb-4" style="text-align: justify;">
               — I am a passionate seeker of knowledge, eager to explore diverse domains, continuously learn new skills, and grow professionally.
               With a deep passion for technology, I am driven to solve real-world problems and deliver impactful, innovative solutions.
               I strongly believe in mutual learning and actively share knowledge as I grow alongside my peers.</p>
 
-            <p>I hold a Bachelor’s degree in Computer Science (B.Sc. CS) from Periyar University, Salem, where I built a strong foundation in programming, problem-solving, and technical concepts.
+            <p style="text-align: justify;">I hold a Bachelor’s degree in Computer Science (B.Sc. CS) from Periyar University, Salem, where I built a strong foundation in programming, problem-solving, and technical concepts.
               This academic journey has shaped my analytical mindset and motivated me to enhance my skills continuously.</p>
 
-            <p>In my previous role, I've dealt with a lot of challenges, which tested my resilience and adaptability, and now I am planning to apply those learnings in a more challenging environment.</p>
+            <p style="text-align: justify;">In my previous role, I've dealt with a lot of challenges, which tested my resilience and adaptability, and now I am planning to apply those learnings in a more challenging environment.</p>
 
-            <p>Confident in my abilities, I am committed to continuous improvement and the ongoing development of my skill set.</p>
+            <p style="text-align: justify;">Confident in my abilities, I am committed to continuous improvement and the ongoing development of my skill set.</p>
           </div>
           <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.5s">
-
             <h1 class="display-5 mb-5">Work Experience</h1>
             
             <!-- Experience - Freelancing -->
@@ -126,12 +157,12 @@
               <div class="d-flex align-items-center mb-3">
                 <h5 class="border-end pe-3 me-3 mb-0">Freelance Web Developer</h5>
                 <div class="d-flex align-items-baseline">
-                  <h2 class="text-primary fw-bold mb-0 me-2" data-toggle="counter-up">2</h2>
+                  <h2 class="text-primary fw-bold mb-0 me-2" data-toggle="counter-up">6</h2>
                   <span class="text-muted">Months</span>
                 </div>
               </div>
             </summary>
-            <p class="mt-2 mb-0 ps-1">Worked as a freelance developer handling small to medium-scale client projects, including building responsive websites, fixing bugs, optimizing performance, and delivering custom features. Gained valuable experience in client communication, project management, and real-world problem solving.</p><br>  
+            <p class="mt-2 mb-0 ps-1" style="text-align: justify;">Worked as a freelance developer handling small to medium-scale client projects, including building responsive websites, fixing bugs, optimizing performance, and delivering custom features. Gained valuable experience in client communication, project management, and real-world problem solving.</p><br>  
 
             <!-- Experience - Lenovo using <details> -->
             <summary class="d-flex align-items-center mb-3 cursor-pointer">
@@ -143,9 +174,9 @@
                 </div>
               </div>
             </summary>
-            <p class="mt-2 mb-0 ps-1">The job of technical support engineers is to provide information technology (IT) support to an organization's customers and employees.</p>
-            <p class="mt-2 mb-0 ps-1">Technical Support Engineer with experience in managing support tickets and assisting users with technical problems.</p>
-            <p class="mt-2 mb-0 ps-1">Familiar with common software applications and basic networking concepts. Strong problem-solving skills and attention to detail.
+            <p class="mt-2 mb-0 ps-1" style="text-align: justify;">The job of technical support engineers is to provide information technology (IT) support to an organization's customers and employees.</p>
+            <p class="mt-2 mb-0 ps-1" style="text-align: justify;">Technical Support Engineer with experience in managing support tickets and assisting users with technical problems.</p>
+            <p class="mt-2 mb-0 ps-1" style="text-align: justify;">Familiar with common software applications and basic networking concepts. Strong problem-solving skills and attention to detail.
             <a href="assets/img/cert/Lenovo and Motorala Experience Certificate.pdf">View</a>.</p><br>
 
             <!-- Experience - Web Projects <details> -->
@@ -158,7 +189,7 @@
                 </div>
               </div>
             </summary>
-            <p class="mt-2 mb-0 ps-1">Assisted in designing and developing responsive websites using HTML, CSS, JavaScript, and various frameworks, while collaborating with the team to improve UI/UX and implement new client-focused features.</p>
+            <p class="mt-2 mb-0 ps-1" style="text-align: justify;">Assisted in designing and developing responsive websites using HTML, CSS, JavaScript, and various frameworks, while collaborating with the team to improve UI/UX and implement new client-focused features.</p>
           </div>
         </div>
       </div>
@@ -170,17 +201,18 @@
         <div class="row g-5">
           <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
             <h1 class="display-5 mb-5">Skills Set</h1>
-              <p class="mb-4">I’ve learned all these skills out of my personal interest, and I still have a strong desire to keep learning, so I’m committed to continuing my journey of growth.</p>
-              <h3 class="mb-4">My Skills</h3>
-              <div class="row align-items-center">
-                <div class="col-md-6">
+            <p class="mb-4" style="text-align: justify;">I’ve learned all these skills out of my personal interest, and I still have a strong desire to keep learning, so I’m committed to continuing my journey of growth.</p>
+            <h3 class="mb-4">Core Competencies</h3>
+            <div class="row align-items-center">
+              <div class="col-md-6">
                   <div class="skill mb-4">
                     <div class="d-flex justify-content-between">
                       <h6 class="font-weight-bold">Windows, Linux</h6>
                       <h6 class="font-weight-bold">75%</h6>
                     </div>
                     <div class="progress">
-                      <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                      </div>
                     </div>
                   </div>
                   <div class="skill mb-4">
@@ -201,8 +233,8 @@
                       <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                   </div>
-                </div>
-                <div class="col-md-6">
+              </div>
+              <div class="col-md-6">
                   <div class="skill mb-4">
                     <div class="d-flex justify-content-between">
                       <h6 class="font-weight-bold">End-to-End DevOps Cycle</h6>
@@ -251,52 +283,42 @@
               <div id="tab-1" class="tab-pane fade show active p-0">
                 <div class="row gy-5 gx-4">
 
-                <!-- Certification Card as a Link -->
-                <div class="col-md-6 col-lg-4">
+                  <!-- Certification Card as a Link -->
+                  <div class="col-md-6 col-lg-4">
                     <a href="assets/img/cert/Microsoft Cloud Support Associate.pdf" target="_blank" class="cert-card bg-white shadow-sm rounded-4 p-3 text-center h-100 text-decoration-none d-flex align-items-center justify-content-center">
-                        <h5 class="mb-0">Microsoft</h5>
-                    </a>
-                </div>
-
+                      <h5 class="mb-0">Microsoft</h5></a>
+                  </div>
                   <div class="col-md-6 col-lg-4">
                     <a href="assets/img/cert/Google IT Automation with Python.pdf" target="_blank" class="cert-card bg-white shadow-sm rounded-4 p-3 text-center h-100 text-decoration-none d-flex align-items-center justify-content-center">
-                        <h5 class="mb-0">Google</h5>
-                    </a>
+                      <h5 class="mb-0">Google</h5></a>
                   </div>
                   <div class="col-md-6 col-lg-4">
                     <a href="assets/img/cert/AWS Cloud Support Associate.pdf" target="_blank" class="cert-card bg-white shadow-sm rounded-4 p-3 text-center h-100 text-decoration-none d-flex align-items-center justify-content-center">
-                        <h5 class="mb-0">AWS</h5>
-                    </a>
+                      <h5 class="mb-0">AWS</h5></a>
                   </div>
                   <div class="col-md-6 col-lg-4">
                     <a href="assets/img/cert/Cybersecurity Operations Fundamentals.pdf" target="_blank" class="cert-card bg-white shadow-sm rounded-4 p-3 text-center h-100 text-decoration-none d-flex align-items-center justify-content-center">
-                        <h5 class="mb-0">Cisco</h5>
-                    </a>
+                      <h5 class="mb-0">Cisco</h5></a>
                   </div>
                   <div class="col-md-6 col-lg-4">
                     <a href="assets/img/cert/IBM IT Support.pdf" target="_blank" class="cert-card bg-white shadow-sm rounded-4 p-3 text-center h-100 text-decoration-none d-flex align-items-center justify-content-center">
-                        <h5 class="mb-0">IBM</h5>
-                    </a>
+                      <h5 class="mb-0">IBM</h5></a>
                   </div>
                   <div class="col-md-6 col-lg-4">
                     <a href="https://www.coursera.org/account/accomplishments/professional-cert/certificate/LCR716CH1B1B" target="_blank" class="cert-card bg-white shadow-sm rounded-4 p-3 text-center h-100 text-decoration-none d-flex align-items-center justify-content-center">
-                        <h5 class="mb-0">LinkedIn</h5>
-                    </a>
+                      <h5 class="mb-0">LinkedIn</h5></a>
                   </div>
                   <div class="col-md-6 col-lg-4">
                     <a href="assets/img/cert/Infosys.pdf" target="_blank" class="cert-card bg-white shadow-sm rounded-4 p-3 text-center h-100 text-decoration-none d-flex align-items-center justify-content-center">
-                        <h5 class="mb-0">Infosys</h5>
-                    </a>
+                      <h5 class="mb-0">Infosys</h5></a>
                   </div>
                   <div class="col-md-6 col-lg-4">
                     <a href="assets/img/cert/Naan Mudhalvan.pdf" target="_blank" class="cert-card bg-white shadow-sm rounded-4 p-3 text-center h-100 text-decoration-none d-flex align-items-center justify-content-center">
-                        <h5 class="mb-0">Naan</h5>
-                    </a>
+                      <h5 class="mb-0">Naan</h5></a>
                   </div>
                   <div class="col-md-6 col-lg-4">
                     <a href="assets/img/cert/EDUCBA.pdf" target="_blank" class="cert-card bg-white shadow-sm rounded-4 p-3 text-center h-100 text-decoration-none d-flex align-items-center justify-content-center">
-                        <h5 class="mb-0">EDUCBA</h5>
-                    </a>
+                      <h5 class="mb-0">EDUCBA</h5></a>
                   </div>
                 </div>
               </div>
@@ -306,7 +328,7 @@
                 <div class="row gy-5 gx-4">
                   <div class="col-sm-6">
                     <h5>Master of Computer Science</h5>
-                    <p class="text-primary mb-1">2025 - 2027</p>
+                    <p class="text-primary mb-1">2026 - 2028</p>
                     <h6 class="mb-0">AVS College of Arts and Science Autonomous</h6>
                   </div>
                   <div class="col-sm-6">
@@ -326,50 +348,136 @@
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
-          <!-- End of right column -->
         </div>
       </div>
     </div>
-    <!-- Expertise End -->
+
+    <!-- Projects Start -->
+    <div class="container-xxl py-6 pt-5" id="project">
+      <div class="container">
+
+        <!-- Header Row -->
+        <div class="row g-5 mb-5 wow fadeInRight" data-wow-delay="0.1s">
+          <div class="col-lg-6">
+            <h1 class="display-5 mb-0">My Projects</h1>
+          </div>
+          <div class="col-lg-6 text-lg-end">
+            <ul class="list-inline mb-0 d-flex justify-content-start" id="portfolio-flters">
+              <li class="list-inline-item mx-3 active" data-filter="*">All projects</li>
+              <li class="list-inline-item mx-3" data-filter=".web">Web Application</li>
+              <li class="list-inline-item mx-3" data-filter=".browser">Browser Extension</li>
+              <li class="list-inline-item mx-3" data-filter=".software">PC Software</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Projects List -->
+        <div class="row g-4 portfolio-container">
+
+          <!-- Project 1 -->
+          <div class="col-lg-4 col-md-6 portfolio-item web wow fadeInRight" data-wow-delay="0.1s">
+            <div class="project-card">
+              <h5>ChronoBot <a href="https://example.com/chronobot" target="_blank" aria-label="View ChronoBot project">
+                <i class="fa-solid fa-link"></i></a>
+              </h5>
+              <p style="text-align: justify;">Developed ChronoBot, an AI chatbot leveraging RAG architecture with LangChain and LLMs. It answers user queries strictly from uploaded documents using overlapping chunking, vector embeddings, and semantic search to deliver accurate, context-aware responses while reducing hallucinations.</p>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="col-lg-4 col-md-6 portfolio-item browser wow fadeInRight" data-wow-delay="0.2s">
+            <div class="project-card">
+              <h5>FocusFlow <a href="https://example.com/focusflow" target="_blank" aria-label="View FocusFlow project">
+                <i class="fa-solid fa-link"></i></a>
+              </h5>
+              <p style="text-align: justify;">FocusFlow is a productivity-focused Chrome extension that minimizes YouTube distractions with category-based content filtering. It securely stores user preferences locally, ensures fast performance, and follows a modular, scalable architecture ready for future AI-powered enhancements.</p>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="col-lg-4 col-md-6 portfolio-item software wow fadeInRight" data-wow-delay="0.3s">
+            <div class="project-card">
+              <h5>TridentOS <a href="https://example.com/tridentos" target="_blank" aria-label="View Trident OS">
+                <i class="fa-solid fa-link"></i></a>
+              </h5>
+              <p style="text-align: justify;">TridentOS is an open-source, Linux-based operating system emphasizing stability, security, and high performance. It offers a modern, intuitive interface, a rich software ecosystem, and customization options, making it ideal for developers, creators, and users seeking a reliable computing experience.</p>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="col-lg-4 col-md-6 portfolio-item web wow fadeInRight" data-wow-delay="0.1s">
+            <div class="project-card">
+              <h5>MotoCompass <a href="https://example.com/motocompass" target="_blank" aria-label="View MotoCompass project">
+                <i class="fa-solid fa-link"></i></a>
+              </h5>
+              <p style="text-align: justify;">Developed MotoCompass, a real-time bike rider tracking app enabling private group rides with room-based tracking. It shows live locations, rider details, and emoji status while ensuring privacy, plus admin controls, safety alerts, and ride analytics for a secure, seamless group riding experience.</p>
+            </div>
+          </div>
+          
+          <!-- Project 5 -->
+          <div class="col-lg-4 col-md-6 portfolio-item browser wow fadeInRight" data-wow-delay="0.2s">
+            <div class="project-card">
+              <h5>AstroEscape <a href="https://example.com/astroescape" target="_blank" aria-label="View Astro Escape project">
+                <i class="fa-solid fa-link"></i></a>
+              </h5>
+              <p style="text-align: justify;">AstroEscape is an offline browser game where players control a dinosaur to dodge asteroids and obstacles. With smooth controls, collectible power-ups, and escalating difficulty, it delivers immersive, endless gameplay directly in the browser for quick, distraction-free fun.</p>
+            </div>
+          </div>
+
+          <!-- Project 6 -->
+          <div class="col-lg-4 col-md-6 portfolio-item software wow fadeInRight" data-wow-delay="0.3s">
+            <div class="project-card">
+              <h5>GrandpaAssistant <a href="https://example.com/grandpaassistant" target="_blank" aria-label="View Grandpa Assistant project">
+                <i class="fa-solid fa-link"></i></a>
+              </h5>
+              <p style="text-align: justify;">Developed GrandpaAssistant, a voice-controlled AI assistant using speech recognition and natural language understanding. It handles queries, reminders, and task automation, integrates with calendar, email, and smart devices, and offers a customizable, accessible AI solution for everyday productivity.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Contact Section Start -->
     <div class="container-xxl py-5" id="contact">
       <div class="container">
             
         <!-- Header Row -->
-        <form action="http://127.0.0.1:8000/submit" method="post">
-          <div class="row g-5 mb-5 wow fadeInLeft" data-wow-delay="0.1s">
-            <div class="col-lg-6">
-              <h1 class="display-5 mb-0">For Contacts</h1>
-            </div>
-            <div class="col-lg-6 text-lg-end">
-              <button class="cert-card btn btn-primary py-3 px-5" type="submit">Submit</button>
-            </div>
+        <div class="row g-5 mb-5 wow fadeInLeft" data-wow-delay="0.1s">
+          <div class="col-lg-6">
+            <h1 class="display-5 mb-0">For Contacts</h1>
           </div>
+          <div class="col-lg-6 text-lg-end">
+            <!-- button form attribute use pannrom -->
+            <button form="contactForm" class="cert-card btn btn-primary py-3 px-5" type="submit">
+              Submit
+            </button>
+          </div>
+        </div>
+        
+        <!-- Content Row -->
+        <div class="row g-4 wow fadeInUp" data-wow-delay="0.2s">
                 
-          <!-- Content Row -->
-          <div class="row g-4 wow fadeInUp" data-wow-delay="0.2s">
-                
-            <!-- Combined Left and Middle Section -->
-            <div class="col-lg-8 col-md-12">
+          <!-- Combined Left and Middle Section -->
+          <div class="col-lg-8 col-md-12">
                     
-              <!-- Form Introduction -->
-              <p class="mb-5">
-                <em>
-                  I just wanted to let you know that I'm not here to convince you to choose me.
-                  If you find someone who can do a better job somewhere else, don't hesitate, don't go with them —
-                  <strong><mark>Don't waste time looking for someone else.</mark></strong><br><br>
-                  That said, if you're open to giving it a try, I’d love to connect.
-                  Please fill in the details and feel free to contact me.<br><br>
-                  Want to know more about my work and background ?
-                  Take a look at my personal.
-                  <a href="linke here desing portfolio">viewport</a>.
-                </em>
-              </p>
+            <!-- Form Introduction -->
+            <p class="mb-5">
+              <em>
+                I just wanted to let you know that I'm not here to convince you to choose me.
+                If you find someone who can do a better job somewhere else, don't hesitate, don't go with them —
+                <strong><mark>Don't waste time looking for someone else.</mark></strong><br><br>
+                That said, if you're open to giving it a try, I’d love to connect.
+                Please fill in the details and feel free to contact me.<br><br>
+                Want to know more about my work and background ?
+                Take a look at my personal.
+                <a href="linke here desing portfolio">viewport</a>.
+              </em>
+            </p>
                 
+            <!-- ================= FORM (ONLY INPUTS) ================= -->
+            <form id="contactForm">
               <div class="row g-3">
                 <div class="col-md-6">
                   <div class="form-floating">
@@ -402,107 +510,258 @@
                   </div>
                 </div>
               </div>
-                
-              <!-- Social Links -->
-              <div class="d-flex pt-2 mb-4">
-                <div class="d-flex">
+            </form>
 
-                  <!-- LinkedIn -->
+            <!-- Social Links -->
+            <div class="d-flex pt-2 mb-4">
+              <div class="d-flex">
                   <a class="cert-card btn btn-square me-2" href="https://www.linkedin.com/in/trhariharasudhan" target="_blank" style="background-color: #0077B5; color: white;">
-                    <i class="fab fa-linkedin-in"></i>
-                  </a>
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
 
-                  <!-- GitHub -->
-                  <a class="cert-card btn btn-square btn-dark me-2" href="https://github.com/Tr-HariHaraSudhan" target="_blank">
-                    <i class="fab fa-github"></i>
-                  </a>
+                <!-- GitHub -->
+                <a class="cert-card btn btn-square btn-dark me-2" href="https://github.com/Tr-HariHaraSudhan" target="_blank">
+                  <i class="fab fa-github"></i>
+                </a>
 
-                  <!-- Mail -->
-                  <a class="cert-card btn btn-square me-2" href="mailto:trhariharasudhan@gmail.com" target="_blank" style="background-color: #D44638; color: white;">
-                    <i class="fas fa-envelope"></i>
-                  </a>
+                <!-- Mail -->
+                <a class="cert-card btn btn-square me-2" href="mailto:trhariharasudhan@gmail.com" target="_blank" style="background-color: #D44638; color: white;">
+                  <i class="fas fa-envelope"></i>
+                </a>
 
-                  <!-- WhatsApp -->
-                  <a class="cert-card btn btn-square me-2" href="https://wa.me/918838759794" target="_blank" style="background-color: #25D366; color: white;">
-                    <i class="fab fa-whatsapp"></i>
-                  </a>
+                <!-- WhatsApp -->
+                <a class="cert-card btn btn-square me-2" href="https://wa.me/918838759794" target="_blank" style="background-color: #25D366; color: white;">
+                  <i class="fab fa-whatsapp"></i>
+                </a>
 
-                  <!-- Instagram -->
-                  <a class="cert-card btn btn-square me-2" href="https://instagram.com/tr_.icky" target="_blank" style="background-color: #E1306C; color: white;">
-                    <i class="fab fa-instagram"></i>
-                  </a>
+                <!-- Instagram -->
+                <a class="cert-card btn btn-square me-2" href="https://instagram.com/tr_.icky" target="_blank" style="background-color: #E1306C; color: white;">
+                  <i class="fab fa-instagram"></i>
+                </a>
 
-                  <!-- Twitter (X) -->
-                  <a class="cert-card btn btn-square me-2" href="https://x.com/HaraSudhan57189" target="_blank" style="background-color: #000000; color: #ffffff;">
-                    <i class="fa-brands fa-x-twitter"></i>
-                  </a>
+                <!-- Twitter (X) -->
+                <a class="cert-card btn btn-square me-2" href="https://x.com/HaraSudhan57189" target="_blank" style="background-color: #000000; color: #ffffff;">
+                  <i class="fa-brands fa-x-twitter"></i>
+                </a>
+
+                <!-- Discord -->
+                <a class="cert-card btn btn-square me-2" href="https://discord.com/channels/@me" target="_blank" style="background-color: #5865F2; color: #ffffff;">
+                  <i class="fa-brands fa-discord"></i>
+                </a>
+              </div>
+
+              <!-- Right Side Buttons (Buddies + Login together) -->
+              <div class="d-flex ms-auto">
+                  
+                <!-- Buddies Button -->
+                <button class="cert-card btn btn-square me-2" style="background-color: #ffffff; color: #000000;" data-bs-toggle="modal" data-bs-target="#friendsModal" title="Buddies / Personal Assistant">
+                  <i class="fas fa-user-friends"></i>
+                </button>
+
+                <!-- Login -->
+                <button type="button" class="cert-card btn btn-square" style="background-color: #ffffff; color: #000000;" data-bs-toggle="modal" data-bs-target="#loginModal">
+                  <i class="fas fa-sign-in-alt"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+            
+          <!-- Right: Google Map -->
+          <div class="col-lg-4 col-md-12">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125042.34611180524!2d78.0558950787394!3d11.653723377452316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babf1ccf52cba0b%3A0xee9989007068ca47!2sSalem%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1752589393594!5m2!1sen!2sin"
+              style="width: 100%; height: 100%; min-height: 400px; border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Friends Modal 
+    <div class="modal fade" id="friendsModal" tabindex="-1" aria-labelledby="friendsModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content p-3">
+          <div class="card-wrapper">
+            <article class="flex-card-container">
+              <img src="assets/img/1.jpg" alt="Ishwarya">
+              <a href="https://your-portfolio-link.com" target="_blank" class="arrow-icon">🡽</a>
+              <div class="overlay">
+                <h1>01</h1>
+                <p>Ishwarya</p>
+              </div>
+            </article>
+            <article class="flex-card-container active">
+              <img src="assets/img/2.jpg" alt="Jeevan Raja">
+              <a href="https://your-portfolio-link.com" target="_blank" class="arrow-icon">🡽</a>
+              <div class="overlay">
+                <h1>02</h1>
+                <p>Jeevan Raja</p>
+              </div>
+            </article>
+            <article class="flex-card-container">
+              <img src="assets/img/3.jpg" alt="Narendheran">
+              <a href="https://your-portfolio-link.com" target="_blank" class="arrow-icon">🡽</a>
+              <div class="overlay">
+                <h1>03</h1>
+                <p>Narendheran</p>
+              </div>
+            </article>
+            <article class="flex-card-container">
+              <img src="assets/img/4.jpg" alt="Parthiban">
+              <a href="https://your-portfolio-link.com" target="_blank" class="arrow-icon">🡽</a>
+              <div class="overlay">
+                <h1>04</h1>
+                <p>Parthiban</p>
+              </div>
+            </article>
+            <article class="flex-card-container">
+              <img src="assets/img/5.jpg" alt="Pratheep">
+              <a href="https://your-portfolio-link.com" target="_blank" class="arrow-icon">🡽</a>
+              <div class="overlay">
+                <h1>05</h1>
+                <p>Pratheep</p>
+              </div>
+            </article>
+            <article class="flex-card-container">
+              <img src="assets/img/6.jpg" alt="Naveen">
+              <a href="https://your-portfolio-link.com" target="_blank" class="arrow-icon">🡽</a>
+              <div class="overlay">
+                <h1>06</h1>
+                <p>Naveen</p>
+              </div>
+            </article>
+            <article class="flex-card-container">
+              <img src="assets/img/7.jpg" alt="Vicky">
+              <a href="https://your-portfolio-link.com" target="_blank" class="arrow-icon">🡽</a>
+              <div class="overlay">
+                <h1>07</h1>
+                <p>Vicky</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content p-3">
+
+          <!-- Modal Header -->
+          <div class="modal-header border-0">
+            <h5 class="modal-title fw-bold">Administrator</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+
+          <!-- Modal Body -->
+          <div class="modal-body p-0">
+            <div class="row g-0 align-items-center" id="modalRow">
+
+              <!-- LEFT SIDE : ILLUSTRATION -->
+              <div class="col-md-6 d-none d-md-flex justify-content-center align-items-center" id="leftImageSection">
+                <img src="assets/img/Admin.png" class="img-fluid login-illustration">
+              </div>
+
+              <!-- RIGHT SIDE : LOGIN FORM -->
+              <div class="col-md-6 p-4" id="loginFormSection">
+                <div class="text-center mb-4">
+                  <img src="assets/img/Aquaman.ico" class="img-fluid" style="max-height:100px;">
+                </div>
+                <div class="text-center mb-2">
+                  <h4 class="fw-bold" style="font-size:28px;">Sign In</h4>
+                  <p class="text-muted" style="font-size:14px;">Only administrators are authorized to log in here.</p>
+                </div>
+                <form id="adminLoginForm">
+                  <div class="mb-3 position-relative">
+                    <i class="fas fa-envelope login-icon"></i>
+                    <input type="email" class="form-control login-input" id="adminEmail" placeholder="Email" required>
+                  </div>
+                  <div class="mb-3 position-relative">
+                    <i class="fas fa-lock login-icon"></i>
+                    <input type="password" class="form-control login-input pe-5" id="adminPassword" placeholder="Password" required>
+                    <i class="fas fa-eye password-toggle" onclick="togglePassword()"></i>
+                  </div>
+                  <div class="d-flex justify-content-between mb-3">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox">
+                      <label class="form-check-label text-muted">Remember me</label>
+                    </div>
+                    <small class="text-muted" style="cursor:pointer;" onclick="forgotPassword()">Forgot Password?</small>
+                  </div>
+                  <button class="btn login-btn w-100">LOGIN</button>
+                </form>
+
+                <!-- OR -->
+                <div class="d-flex align-items-center my-3">
+                  <hr class="flex-grow-1">
+                  <span class="px-2 text-muted small">OR</span>
+                  <hr class="flex-grow-1">
                 </div>
 
-                <!-- Right Side Buttons (Buddies + Login together) -->
-                <div class="d-flex ms-auto">
-                  
-                  <!-- Buddies -->
-                  <a class="cert-card btn btn-square me-2" href="" style="background-color: #ffffff; color: #000000;">
-                    <i class="fas fa-user-friends"></i>
-                  </a>
+                <!-- Social -->
+                <div class="d-flex justify-content-center gap-4">
+                  <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" style="width:22px;">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" style="width:22px;">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" style="width:22px;">
+                </div>
+                <div class="text-center mt-4">
+                  <small>If you’re not an admin, you can’t—contact the admin.
+                    <a href="#" class="fw-semibold text-decoration-none">Register here →</a>
+                  </small>
+                </div>
+              </div>
 
-                  <!-- Login -->
-                  <a class="cert-card btn btn-square" href="" style="background-color: #ffffff; color: #000000;">
-                    <i class="fas fa-sign-in-alt"></i>
-                  </a>
+              <!-- Client Data Table -->
+              <div class="col-12 p-4 d-none" id="dataTableSection">
+                <div class="text-center mb-3">
+                  <h4 class="fw-bold">Client Information Directory</h4>
+                  <p class="text-muted" style="font-size:14px;">
+                    The data list displays the detailed information of all clients who have submitted an enquiry form.
+                  </p>
+                </div>
+
+                <!-- Table -->
+                <div class="table-responsive">
+                  <table class="table table-bordered table-hover align-middle text-center">
+                    <thead class="table-dark">
+                      <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Email ID</th>
+                        <th>Company</th>
+                        <th>Job Role</th>
+                        <th>Message</th>
+                      </tr>
+                    </thead>
+                    <tbody id="clientTableBody"></tbody>
+                  </table>
+                </div>
+                <div class="text-center mt-3">
+                  <button class="btn btn-danger btn-sm" onclick="logout()">Logout</button>
                 </div>
               </div>
             </div>
-            
-            <!-- Right: Google Map -->
-            <div class="col-lg-4 col-md-12">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125042.34611180524!2d78.0558950787394!3d11.653723377452316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babf1ccf52cba0b%3A0xee9989007068ca47!2sSalem%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1752589393594!5m2!1sen!2sin"
-                style="width: 100%; height: 100%; min-height: 400px; border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-              </iframe>
-            </div>
           </div>
-        </form>
+        </div>
       </div>
     </div>
 
     <!-- Back to Top -->
-    <a href="#" class="cert-card btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa-solid fa-arrow-up"></i></i></a>
+    <a href="#" class="cert-card btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa-solid fa-arrow-up"></i></a>
 
-    <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      const form = document.querySelector("form");
-      
-      form.addEventListener("submit", function(e) {
-        e.preventDefault();
-        form.innerHTML = `
-          <div class="text-center p-5">
-            <h2 class="text-success mb-3">Thank You!</h2>
-            <p>Your message has been successfully submitted. I’ll get back to you soon.</p>
-          </div>
-        `;
-      });
-    });
-    </script>
-    
-    <!-- 🔹 SCRIPT paste pannunga body close agurathukulla -->
-    <script src=""></script>
-
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- JavaScript Libraries Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/lib/wow/wow.min.js"></script>
-    <script src="assets/lib/easing/easing.min.js"></script>
-    <script src="assets/lib/waypoints/waypoints.min.js"></script>
-    <script src="assets/lib/typed/typed.min.js"></script>
-    <script src="assets/lib/counterup/counterup.min.js"></script>
-    <script src="assets/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="assets/lib/owlcarousel/owl.carousel.min.js"></script>    
     <script src="assets/lib/isotope/isotope.pkgd.min.js"></script>
     <script src="assets/lib/lightbox/js/lightbox.min.js"></script>
-
-    <!-- Bootstrap 5 JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Template Javascript -->
+    <script src="assets/lib/waypoints/waypoints.min.js"></script>
+    <script src="assets/lib/counterup/counterup.min.js"></script>
+    <script src="assets/lib/easing/easing.min.js"></script>
+    <script src="assets/lib/typed/typed.min.js"></script>
+    <script src="assets/lib/wow/wow.min.js"></script>
     <script src="assets/js/main.js"></script>
+
   </body>
 </html>

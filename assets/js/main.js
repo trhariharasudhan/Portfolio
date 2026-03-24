@@ -158,6 +158,23 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+function calculateMonths(startYear, startMonth) {
+    const startDate = new Date(startYear, startMonth); // month is 0-based
+    const today = new Date();
+
+    let months;
+    months = (today.getFullYear() - startDate.getFullYear()) * 12;
+    months += today.getMonth() - startDate.getMonth();
+
+    return months >= 0 ? months : 0;
+  }
+
+  // July 2025 → month = 6 (0-based index)
+  const months = calculateMonths(2025, 6);
+
+  document.getElementById("exp-months").innerText = months;
+
+
 // Fetch and display data from Google Sheets
 document.addEventListener("DOMContentLoaded", () => {
   const apiURL =

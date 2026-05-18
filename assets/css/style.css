@@ -427,6 +427,7 @@
   padding: 8px 12px;
   word-wrap: break-word;
 }
+
 .msg.assistant {
   display: inline-block;
   max-width: 75%;
@@ -435,6 +436,7 @@
   padding: 8px 12px;
   word-wrap: break-word;
 }
+
 .chat-box .text-end {
   text-align: right !important;
 }
@@ -453,177 +455,87 @@
 /* Plus button (neutral) */
 .plus-btn {
   background-color: #ffffff;
-  color: #5f6368;
   border: none;
-  border-radius: 50%;
-  width: 36px;
-  height: 36px;
-  font-size: 1.4rem;
-  font-weight: bold;
-  margin-right: 6px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  color: #000;
+  font-size: 18px;
   cursor: pointer;
-  transition: background 0.2s;
-}
-.plus-btn:hover {
-  background-color: #e0e0e0;
+  padding: 5px 8px;
+  border-radius: 4px;
 }
 
-/* Input field */
-.input-container input {
+.plus-btn:hover {
+  background-color: #f0f0f0;
+}
+
+/* Mic button (purple) */
+.mic-btn {
+  background-color: #ffffff;
+  border: none;
+  color: #6f42c1;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 5px 8px;
+  border-radius: 4px;
+}
+
+.mic-btn:hover {
+  background-color: #f0f0f0;
+}
+
+/* Chat Input */
+.chat-input {
   flex: 1;
   border: none;
   outline: none;
   padding: 8px 12px;
-  border-radius: 50px;
-  font-size: 1rem;
+  border-radius: 20px;
+  font-size: 14px;
+  background: #f0f0f0;
 }
 
-/* Voice & Send buttons (purple) */
-.voice-send-btn {
-  background-color: #6244c5;
-  color: white;
-  border: none;
-  border-radius: 50%;
-  width: 36px;
-  height: 36px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 6px;
-  cursor: pointer;
-  transition: background 0.2s;
-}
-.voice-send-btn:hover {
-  background-color: #4e35a8;
+.chat-input:focus {
+  background: #fff;
+  box-shadow: 0 0 0 2px rgba(98, 68, 197, 0.15);
 }
 
-/* Reload & Close buttons same size */
-.modal-control-btn {
-  width: 36px;
-  height: 36px;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.1rem;
+/* Login Modal */
+.login-form {
+  padding: 30px;
 }
 
-/* Custom Close Button */
-.btn-close-custom {
-  font-size: 1.2rem;
-  color: #000;
-  background: none;
-  border: none;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.btn-close-custom span {
-  line-height: 1;
+.login-form .form-group {
+  margin-bottom: 15px;
+  position: relative;
 }
 
-/* Smooth card hover effect */
-.service-item {
-  transition: 0.3s ease;
-  border: 1px solid #eee;
-}
-.service-item:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.12);
+.login-form label {
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #333;
 }
 
-/* Modal content smoothness */
-.modal-content {
-  border-radius: 12px;
-}
-
-.btn-primary {
-  border-radius: 0px;
-  padding: 10px 25px;
-}
-
-/* "View Project" button inside modal */
-.modal-body .btn {
-  background: #ffc448;
-  color: #fff;
-  border-radius: 0px;
-  padding: 10px 20px;
-  transition: 0.3s;
-}
-.modal-body .btn:hover {
-  background: #ffc448;
-}
-
-/* Spinner */
-#spinner {
-  z-index: 9999;
-}
-
-/* Smooth fade-in for modals */
-.modal.fade .modal-dialog {
-  transform: translateY(-20px);
-  transition: all 0.3s ease-out;
-}
-.modal.show .modal-dialog {
-  transform: translateY(0);
-}
-
-/*Cert card*/
-.cert-card {
-  cursor: pointer;
-  transition: all 0.3s ease;
+.login-form .form-control {
+  padding: 10px 15px;
+  border: 1px solid #ddd;
   border-radius: 5px;
+  font-size: 14px;
 }
 
-.cert-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+.login-form .form-control:focus {
+  border-color: #6244c5;
+  box-shadow: 0 0 0 3px rgba(98, 68, 197, 0.1);
+  outline: none;
 }
 
-/* ================================
-        LOGIN MODAL STYLES
-      ================================ */
-
-/* Modal card */
-#loginModal .modal-content {
-  border-radius: 10px;
-  overflow: hidden;
-  border: none;
-}
-
-/* Header */
-#loginModal .modal-header {
-  border-bottom: none;
-  padding-bottom: 0;
-}
-
-/* Title */
-#loginModalLabel {
-  font-weight: 700;
-  letter-spacing: 0.5px;
-}
-
-/* LEFT IMAGE ANIMATION */
 .login-illustration {
-  max-width: 80%;
-  animation: floatImage 2s ease-in-out infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Floating effect */
-@keyframes floatImage {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-12px);
-  }
-  100% {
-    transform: translateY(0);
-  }
+.login-illustration img {
+  max-width: 100%;
+  height: auto;
 }
 
 /* LOGIN INPUT FIELD */
@@ -694,6 +606,7 @@
   }
 }
 
+/**********  Global Styles  **********/
 * {
   margin: 0;
   padding: 0;
@@ -704,6 +617,7 @@
 body {
   min-height: 100vh;
   margin: 0;
+  font-family: "Open Sans", sans-serif;
 }
 
 /* Full screen wrapper */
@@ -784,11 +698,6 @@ body {
   }
 }
 
-.flex-card-container {
-  position: relative;
-  overflow: hidden;
-}
-
 .arrow-icon {
   position: absolute;
   top: 10px;
@@ -867,11 +776,6 @@ body {
   border-bottom: 2px solid #6244c5;
 }
 
-/* Global Styles */
-body {
-  font-family: "Open Sans", sans-serif;
-}
-
 /* Modal */
 .modal-content {
   border-radius: 15px;
@@ -895,6 +799,7 @@ body {
   gap: 8px;
   background: #ffffff;
 }
+
 /* Chat Messages */
 .chat-message {
   padding: 8px 12px;
@@ -927,16 +832,6 @@ body {
   border-top: 1px solid #ffffff;
 }
 
-/* Input Field */
-.chat-input {
-  flex: 1;
-  border: none;
-  outline: none;
-  padding: 10px 14px;
-  border-radius: 999px;
-  font-size: 14px;
-  background: #f0f0f0;
-}
 /* Chat Buttons */
 .chat-btn {
   border: none;
@@ -950,12 +845,6 @@ body {
 /* Hover Effect */
 .chat-btn:hover {
   background: #ffffff;
-}
-
-/* Specific Buttons */
-.plus-btn {
-  color: #000;
-  font-size: 16px;
 }
 
 /* Microphone Button */
@@ -1060,7 +949,7 @@ body {
   display: none;
   background: #ffffff;
   border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 20px #00000026;
   padding: 8px;
 }
 

@@ -132,7 +132,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     try {
       const response = await fetch(
-        "https://script.google.com/macros/s/AKfycbzYNGsDxNdEW1MfqmFzdgQctRVETl0L0Mpz-QeYKbfd2vmeO6brt__z9S8rIKIOIje1rw/exec",
+        "https://script.google.com/macros/s/AKfycbwTQpITCwVUr1ReJxP3xQ0XT9eYb-b0rB6mGolmKhdsGbkJqe0whXeeOkf87FOEJvYOdw/exec",
         {
           method: "POST",
           body: new URLSearchParams(formData),
@@ -161,7 +161,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // Fetch and display data from Google Sheets
 document.addEventListener("DOMContentLoaded", () => {
   const apiURL =
-    "https://script.google.com/macros/s/AKfycbzYNGsDxNdEW1MfqmFzdgQctRVETl0L0Mpz-QeYKbfd2vmeO6brt__z9S8rIKIOIje1rw/exec";
+    "https://script.google.com/macros/s/AKfycbzJJ6PQZvJxol13jpA8b08KoaqP1IxQSr9ITCpGDDUeVdmyY3PkzYmM5CWdlufg5uzn7g/exec";
 
   fetch(apiURL)
     .then((res) => res.json())

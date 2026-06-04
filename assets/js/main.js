@@ -417,7 +417,7 @@ document.addEventListener("DOMContentLoaded", () => {
             •	Python programming <i>(scripting, automation basics, backend fundamentals)</i>
             •	Foundational knowledge of full-stack development<br>
             <b>Development Tools</b>
-            •	Cursor, Visual Studio Code, GitHub<br>
+            •	Cursor, Visual Studio Code, GitHub, Antigravity<br>
             <b>Productivity Tools</b>
             •	Microsoft Office <i>(Word, Excel, PowerPoint)</i><br>
             <b>Cloud Technologies</b>

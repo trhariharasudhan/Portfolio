@@ -344,8 +344,8 @@ document.addEventListener("DOMContentLoaded", () => {
       return `My name is <b><mark>Hari Hara Sudhan</mark></b> (TR). I am a <b>${age}-year-old male</b>, born on <b>07 October 2003</b>, and currently <b>single.</b> I reside in <b>Gugai, Salem, Tamil Nadu, India.</b> I am also known by the preferred names <b>Achchuu</b> and <b>Tricky.</b>`;
     }
 
-    if (q.includes("contact") || q.includes("contact info")) {
-      return `You can reach me by visiting the <b>Contact</b> section of my portfolio website. There, you’ll find links to my social media profiles such as <b>LinkedIn, GitHub, Email, WhatsApp, and Instagram—</b>feel free to contact me through any platform you prefer.<br><br>Alternatively, you can fill out the <b>Contact form</b> in the same section and submit it, and I’ll get back to you directly as soon as possible.`;
+    if (q.includes("contact")) {
+      return `You can reach me by visiting the <b>Contact</b> section of my portfolio website. There, you’ll find links to my social media profiles such as <b>LinkedIn, Email, WhatsApp, and Instagram—</b>feel free to contact me through any platform you prefer.<br><br>Alternatively, you can fill out the <b>Contact form</b> in the same section and submit it, and I’ll get back to you directly as soon as possible.`;
     }
     if (q.includes("aspirations")) {
       return `<strong>Personal Vision for the Future</strong>
@@ -433,7 +433,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     if (q.includes("work") || q.includes("experience")) {
       return `<strong>Professional Experience</strong><br>
-            <b>Freelance Web Developer | Self-Employed</b> <i>6 Months (20 July 2025 – Present)</i>
+            <b>Freelance Web Developer | Self-Employed</b> <i>10 Months (20 July 2025 – Present)</i>
             I design, develop, and maintain custom websites for clients using HTML, CSS, JavaScript, and backend technologies. I ensure responsive design, user-friendly interfaces, and client-specific functionalities.<br>
             <b>Technical Support Engineer – Lenovo Project | Skypro Technologies Pvt Ltd.</b> <i>(Parent Company: Wipro | Project: Lenovo) | 9 Months (20 November 2024 – 20 July 2025)</i>
             I handled hardware, software, and network troubleshooting for laptops and desktops.<br>
